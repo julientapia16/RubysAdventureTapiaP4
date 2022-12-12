@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3724189796110585982}
   - component: {fileID: 3724189796110585983}
   - component: {fileID: 3724189796110585987}
-  - component: {fileID: 5662119222310859261}
+  - component: {fileID: 1942092161}
   m_Layer: 0
   m_Name: bot
   m_TagString: Untagged
@@ -150,7 +150,7 @@ MonoBehaviour:
   speed: 3
   vertical: 0
   changeTime: 3
---- !u!95 &5662119222310859261
+--- !u!95 &1942092161
 Animator:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -160,7 +160,7 @@ Animator:
   m_GameObject: {fileID: 3724189796110585976}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 325f0376219aa894aa3345a4f38b3871, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

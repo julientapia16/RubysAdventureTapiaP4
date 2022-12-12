@@ -13,10 +13,19 @@ public class EnemyController : MonoBehaviour
     int direction = 1;
 
     // Start is called before the first frame update
+
+    Animator animator;
     void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
         timer = changeTime;
+        animator = GetComponent<Animator>();
+
+        animator.SetFloat("Move X", 0);
+        animator.SetFloat("Move Y", direction);
+
+        animator.SetFloat("Move X", direction);
+        animator.SetFloat("Move Y", 0);
     }
 
     void Update()
@@ -53,6 +62,7 @@ public class EnemyController : MonoBehaviour
         if (player != null)
         {
             player.ChangeHealth(-1);
-        
+
+        }
     }
 }
